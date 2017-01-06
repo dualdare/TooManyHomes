@@ -1,0 +1,26 @@
+name: TooManyHomes
+main: com.gmail.doubledare1202.TooManyHomes
+version: 1.0alpha
+author: dualdare
+website:
+description: Set your many home point! This plugin is useful!
+commands:
+    toomanyhomes:
+        usage: /<command>
+        aliases: [tmh ,thome,to,homes]
+        description: tooManyHomes Command
+permissions:
+    toomanyhomes.*:
+        children:
+            toomanyhomes.default: true
+            toomanyhomes.teleport: true
+            toomanyhomes.admin: true
+    toomanyhomes.default:
+        default: true
+        description: Number of HomePoint is default setting.if you change this,you would set Config.yml.
+    toomanyhomes.teleport:
+        default: true
+        description: Allow Teleport Command
+    toomanyhomes.admin:
+        default: op
+        description: Allow Teleport/delete Other player's HomePoint, and your Number of HomePoint is Infinity !.
